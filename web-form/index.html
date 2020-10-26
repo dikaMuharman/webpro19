@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="post" class="form">
+      <h1 class="form__title">Student registration form</h1>
+
+      <div class="form__item">
+        <label for="name" class="form__label">Name</label>
+        <input
+          type="text"
+          class="form__input"
+          name="name"
+          autocomplete="off"
+          placeholder="Your full name"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="birthdate" class="form__label">Birth Date</label>
+        <input
+          type="date"
+          class="form__input"
+          name="birthDate"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form__item form__item--inline">
+        <label for="gender" class="form__label">Gender</label>
+        <div class="form__group">
+          <div class="form__radio">
+            <input type="radio" name="gender" required />
+            <label for="male">Male</label>
+          </div>
+          <div class="form__radio">
+            <input type="radio" name="gender" required />
+            <label for="female">Female</label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <label for="email" class="form__label">Email address</label>
+        <input
+          type="email"
+          class="form__input"
+          name="birthDate"
+          placeholder="your email address"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="phoneNumber" class="form__label">Phone Number</label>
+        <input
+          type="tel"
+          class="form__input"
+          name="birthDate"
+          placeholder="e.g +628123456789"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="address" class="form__label">Address</label>
+        <textarea
+          name="address"
+          cols="30"
+          rows="10"
+          placeholder="Your address home"
+          class="form__input"
+        ></textarea>
+      </div>
+      <div class="form__item">
+        <label for="zipCode" class="form__label">Zip Code</label>
+        <input
+          type="number"
+          name="zipCode"
+          id="zipCode"
+          class="form__input"
+          placeholder="e.g 17532"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="City" class="form__label">City</label>
+        <input
+          type="text"
+          name="city"
+          id="city"
+          class="form__input"
+          placeholder="e.g Jakara, new York"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="courseName" class="form__label">Course name</label>
+        <input
+          type="text"
+          name="courseName"
+          id="courseName"
+          class="form__input"
+          placeholder="your course name"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label for="Payment" class="form__label">Payment detail</label>
+        <select name="payment" id="payment" class="form__input">
+          <option selected>Choose one</option>
+          <option value="cash">Cash</option>
+          <option value="card">Credit Card</option>
+          <option value="check">Check</option>
+          <option value="onlinePayment">Online Payment (ovo, paypal)</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <input
+          type="submit"
+          value="Submit"
+          class="form__input form__input--btn"
+        />
+      </div>
+    </form>
+  </body>
+</html>
